@@ -41,12 +41,9 @@ def help_user(bot, update):
 def send_start(bot, update):
     # logger.info(update)
     
-    bot.send_message(
+    bot.send_sticker(
         chat_id=update.chat.id,
-        text=script.START_TEXT.format(update.from_user.first_name),
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
+        'CAADBQAD7AUAAlfACVcOiz8UpYxbbwI'
     )
     bot.send_message(
         chat_id=update.chat.id,
